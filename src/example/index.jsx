@@ -1,10 +1,9 @@
-import { useModal } from "../lib";
+import { close, endTask, useModal } from "../lib";
 import { useEffect } from "react";
 // import { useNavigate } from 'react-router-dom'; // !!! IN ROUTING CONTEXT
 
 import { Modal } from "../lib";
-import { close } from "../lib";
-import { thumbUp } from "../lib";
+// import { close } from "../lib";
 
 export default function Example() {
   const { isOpen, toggle, escToClose } = useModal();
@@ -33,7 +32,7 @@ export default function Example() {
         close={toggle} // useModal hook
         x={close} // replace with the name of your import
         // ADDITIONAL (optional)
-        icon={thumbUp} // replace with the name of your import
+        icon={endTask} // replace with the name of your import
         title="Confirmation" // replace with any string
         msgL1="Modal plugin" // replace with any string
         msgL2="successfully installed" // replace with any string
