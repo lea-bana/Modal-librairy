@@ -6,7 +6,7 @@ import { Modal } from "../lib";
 import { close } from "../lib";
 import { thumbUp } from "../lib";
 
-export default function Exemple() {
+export default function Example() {
   const { isOpen, toggle, escToClose } = useModal();
 
   // detects when escape key pressed to close the modal
