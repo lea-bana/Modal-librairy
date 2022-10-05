@@ -68,10 +68,19 @@ export default function Modal({
             className="modal-container"
             role="dialog"
             id="modal-component"
+            aria-modal="true"
+            tabIndex={-1}
+            aria-labelledby="dialogTitle"
+            aria-describedby="dialogDescription"
           >
-            <button className="modal-container-close" onClick={close}>
+            <button
+              className="modal-container--close"
+              aria-label="Close"
+              onClick={close}
+            >
               <img src={x} alt="close icon" />
             </button>
+
             {hideHeader ? null : (
               <>
                 <header className="modal-header">
@@ -79,7 +88,11 @@ export default function Modal({
                     <img className="modal-header--icon" src={icon} alt={icon} />
                   )}
                   {hideTitle ? null : (
-                    <h2 className="modal-header--title" id="dialogTitle">
+                    <h2
+                      tabIndex="0"
+                      className="modal-header--title"
+                      id="dialogTitle"
+                    >
                       {title}
                     </h2>
                   )}
@@ -120,7 +133,8 @@ export default function Modal({
                   )}
                   {hideBtn2 ? null : (
                     <button
-                      className={`modal-footer-btn2 ${disableBtn2}`}
+                      className={`modal-footer--btn2 ${disableBtn2}`}
+                      aria-label="Link"
                       onClick={redirect}
                     >
                       {btn2}
