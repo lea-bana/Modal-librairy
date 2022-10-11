@@ -97,7 +97,7 @@ export default function Modal({
                     </h2>
                   )}
                 </header>
-                <hr className="modal-header-separator" />
+                <hr className="modal-header--separator" />
               </>
             )}
             <main className="modal-main--msg">
@@ -120,11 +120,11 @@ export default function Modal({
             </main>
             {hideFooter ? null : (
               <>
-                <hr className="modal-footer-separator" />
+                <hr className="modal-footer--separator" />
                 <footer className="modal-footer">
                   {hideBtn1 ? null : (
                     <button
-                      className={`modal-footer-btn1 ${disableBtn1}`}
+                      className={`modal-footer--btn1 ${disableBtn1}`}
                       aria-label="Close"
                       onClick={close}
                     >
