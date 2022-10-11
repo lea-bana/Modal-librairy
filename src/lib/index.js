@@ -13,10 +13,5 @@ import Modal from "./components/Modal";
 // EXPORTS
 export { close };
 export { endTask };
-//export { thumbUp };
 export { useModal };
 export { Modal };
-// export { FEATURES };
-// export { PROPS };
-// export { MORE };
-// export { EXEMPLE };

@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# leabmodal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A customizable Modal component for React apps
 
-## Available Scripts
+> _using React Portal, the Modal is mounted on its own node as a distinct child of App body_
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+☑️ **useModal**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    custom hook to mount / unmount Modal container
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+☑️ **VARIOUS ITEMS**
 
-### `npm test`
+    🔘 close button (img)
+    🔘 Modal container illustration (img)
+    🔘 title
+    🔘 message line 1
+    🔘 message line 2
+    🔘 button 1
+    🔘 button 2
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+☑️ **THAT YOU CAN**
 
-### `npm run build`
+    🔘 EDIT ---- (string type)
+    🔘 HIDE ---- (exept required)
+    🔘 DISABLE - (button type)
+    🔘 STYLE --- (css files)
+        ✔ separated color variables
+        ✔ clear and logical items attributes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting started guide
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Source [leabmodal](https://github.com/lea-bana/Modal-librairy.git)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install
 
-### `npm run eject`
+**With npm run the following command**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    npm i leabmodal
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**With yarn run the following command**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    yarn add leabmodal
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Use
 
-## Learn More
+**Import the plugin & its hook in your React component**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```jsx
+import { Modal, useModal } from "leabmodal";
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Import UseNavigate hook if you need to implement redirect function**
 
-### Code Splitting
+```jsx
+import { useNavigate } from "react-router-dom"; // !!! IN ROUTING CONTEXT
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Use the default assets to beautify your modal _(like exemple)_**
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```jsx
+<Modal
+  x={close}
+  icon={endTask}
+  // or icon={validate}
+/>
+```
