@@ -1,4 +1,4 @@
-# modal-library
+# leabmodal
 
 A customizable Modal component for React apps
 
