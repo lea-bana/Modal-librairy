@@ -102,7 +102,7 @@ function Modal(_ref) {
               children: title
             })]
           }), /*#__PURE__*/(0, _jsxRuntime.jsx)("hr", {
-            className: "modal-header-separator"
+            className: "modal-header--separator"
           })]
         }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("main", {
           className: "modal-main--msg",
@@ -119,11 +119,11 @@ function Modal(_ref) {
           })]
         }), hideFooter ? null : /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
           children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("hr", {
-            className: "modal-footer-separator"
+            className: "modal-footer--separator"
           }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("footer", {
             className: "modal-footer",
             children: [hideBtn1 ? null : /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
-              className: "modal-footer-btn1 ".concat(disableBtn1),
+              className: "modal-footer--btn1 ".concat(disableBtn1),
               "aria-label": "Close",
               onClick: close,
               children: btn1
